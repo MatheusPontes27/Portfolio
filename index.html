@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Portfolio | Matheus Pontes</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="links">
+            <a href="#" class="active">About</a>
+            <a href="#">Portfolio</a>
+            <a href="https://wa.me/5583999715961">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div class="left">
+            <h3>Front-End Developer</h3>
+            <div class="info">
+                <h2>I'm Matheus Pontes</h2>
+                <p>Transforming ideas into stunning interfaces!</p>
+                <div class="buttons">
+                    <a href="https://wa.me/5583999715961" class="hire-button">
+                    <button class="hire">
+                        Hire me <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                    </a>
+                    <button class="email" onclick="copyEmail()">
+                        Copy Email <i class="fa-solid fa-copy"></i>
+                    </button>
+                    <script>
+                        function copyEmail() {
+                            const email= "matheusemmanuel71@gmail.com";
+                            navigator.clipboard.writeText(email).then(() => {
+                                alert("Email copied to clipboard!");
+                            }).catch(err =>{
+                                console.error("Failed to copy email:", err);
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="online"><i class="fa-solid fa-circle"></i>Available for Job</a>
+            <img src="./IMAGES/matheus2.png">
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="left">
+            <h3><i class="fa-solid fa-circle"> Recent Works </i></h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Front-End Developer</h5>
+                        <p>2024 - Present</p>
+                    </div>
+                    <p>City Hall of Ipueiras</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Airport Agent</h5>
+                        <p>2016 - 2023</p>
+                    </div>
+                    <p>Azul Airlines</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Junior UI/UX Designer</h5>
+                        <p>2014 - 2015</p>
+                    </div>
+                    <p>Freelancer</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Administrative Assistant</h5>
+                        <p>2013 - 2014</p>
+                    </div>
+                    <p>Kenner .Ind</p>
+                </div>    
+            </div>
+        </div>
+        <div class="right">
+            <div class="item">
+                <a href="#">About My Work</a>
+                <p>As a software engineer at Ipueiras City Hall and head of the purchasing department, 
+                    I am responsible for receiving all requests from the departments, researching prices and purchasing the researched items, 
+                    processing supplier payments, 
+                    and maintaining the expense request and procurement systems (M2A and Aspec).
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Software Development and Maintenance</a>
+                <p>
+                    Creating and managing software to improve city operations.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Digital Transformation Initiatives</a>
+                <p>
+                    Leading efforts to automate and improve administrative processes.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Purchasing Department Support</a>
+                <p>
+                    Developing tools for efficient procurement and compliance.
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Impact and Contribution</a>
+                <p>
+                    Enhancing city efficiency and public trust through technology.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="#">My Portfolio</a>
+        <div class="socials">
+            <a href="https://github.com/MatheusPontes27?tab=overview&from=2023-12-01&to=2023-12-31">Github</a>
+            <a href="https://www.instagram.com/matheusepontes/">Instagram</a>
+            <a href="https://www.linkedin.com/in/matheusempontes/">LinkedIn</a>
+        </div>
+        <a href="#" class="online"><i class="fa-solid fa-circle"></i> Available for Job</a>
+    </footer>
+    <div class="allrights clear">    
+        <p>All Rights Reserved Matheus Pontes <img src="./IMAGES/copyright_icon-icons.com_76791.png" width="10" height="10"></p>
+    </div>
+
+</body>
+
+</html>
