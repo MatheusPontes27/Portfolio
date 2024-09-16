@@ -36,16 +36,6 @@
                     <button class="email" onclick="copyEmail()">
                         Copiar Email <i class="fa-solid fa-copy"></i>
                     </button>
-                    <script>
-                        function copyEmail() {
-                            const email= "matheusemmanuel71@gmail.com";
-                            navigator.clipboard.writeText(email).then(() => {
-                                alert("Email copied to clipboard!");
-                            }).catch(err =>{
-                                console.error("Failed to copy email:", err);
-                            });
-                        }
-                    </script>
                 </div>
             </div>
         </div>
@@ -135,7 +125,7 @@
     <div class="allrights clear">    
         <p>All Rights Reserved Matheus Pontes <img src="./IMAGES/copyright_icon-icons.com_76791.png" width="10" height="10"></p>
     </div>
-
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
